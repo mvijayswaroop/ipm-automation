@@ -1,0 +1,19 @@
+{
+	"options": {
+		"wrapperName": "IPMLibrary",
+		"wrapperTitle": "RobotFramework IPM Keywords library",
+		"wrapperDocumentationName": "IPM_Wrapper_Documentation",
+		"wrapperDocumentationTitle": "RobotFramework IPM Keywords library",
+		"wrapperDocumentationIntroduction": "The table below lists all available IPM keywords and their parameters.",
+		"internalWrapperName": "IPMLibraryInternal",
+		"useMultipleFiles": true,
+		"usePythonLibraryLayout": true,
+		"includePublicInInternal": true
+	},
+	"files": [
+		{
+			"src": ["src/keywords/**/*.ts"],
+			"dest": "robotKeywords"
+		}
+	]
+}

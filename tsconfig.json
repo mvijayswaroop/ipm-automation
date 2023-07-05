@@ -2,27 +2,25 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "skipLibCheck": true,
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
+    "outDir": "./out-tsc/app",
     "sourceMap": true,
-    "declaration": false,
-    "downlevelIteration": true,
-    "experimentalDecorators": true,
+    "declaration": true,
+    "module": "es2020",
     "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "importHelpers": true,
-    "target": "ES2022",
-    "module": "ES2022",
-    "useDefineForClassFields": false,
+    "target": "es2015",
+    "resolveJsonModule": true,
+    "typeRoots": ["node_modules/@types"],
     "lib": [
-      "ES2022",
+      "es2018",
       "dom"
-    ]
+    ],
+    "noImplicitAny": false,
+    "noUnusedLocals": false
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
