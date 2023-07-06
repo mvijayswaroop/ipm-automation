@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Inject } from '@angular/core';
 import * as angular from 'angular';
-import {COMPONENT_ACTIONS_SERVICE, ComponentActionsService, IComponentActionsService} from 'platform-map/app/services/component-actions/component-actions.service';
+import {COMPONENT_ACTIONS_SERVICE, ComponentActionsService, IComponentActionsService} from 'platform-map';
 
 /**
  * @automationService ipm-automation.ComponentActions
@@ -32,11 +32,11 @@ export class ComponentActions{
 //   }
 // ]);
 
-ionweb
-    .module("ipm-automation")
-    .service("ComponentActions", 
-        ["ComponentActionsService"], 
-        (ComponentActionsService:IComponentActionsService) => {
-            return new ComponentActions(ComponentActionsService);
-        }
-    );
+// ionweb
+//     .module("ipm-automation")
+//     .service("ComponentActions", 
+//         ["ComponentActionsService"], 
+//         (ComponentActionsService:IComponentActionsService) => {
+//             return new ComponentActions(ComponentActionsService);
+//         }
+//     );
