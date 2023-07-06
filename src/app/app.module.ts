@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {IPMModule} from 'platform-map';
 
 import { AppComponent } from './app.component';
 import { ComponentActions } from 'src/keywords/component-management.service';
@@ -9,7 +10,8 @@ import { ComponentActions } from 'src/keywords/component-management.service';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    IPMModule
   ],
   providers: [ComponentActions],
   bootstrap: [AppComponent]
